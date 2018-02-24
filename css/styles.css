@@ -1,0 +1,166 @@
+* {
+  margin: 0 auto;
+  font-family: "Merriweather";
+}
+
+header {
+  background: #333;
+  color: #fff;
+  height: 100px;
+}
+
+
+
+h1 {
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 50px;
+
+}
+
+.text {
+  text-align: center;
+  color: #333;
+  padding: 5%;
+  margin: 0 5%;
+  border-bottom: 5px solid #333;
+  width: 80%;
+}
+
+fieldset {
+    border: 0;
+}
+
+.form {
+  border-top: 2px solid #333;
+  padding-top: 20px;
+  margin: 5px 5%;
+}
+
+input[type=text],
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background: #eee;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.line {
+  border-bottom: 2.5px solid #333;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.line-space {
+  margin-top: 20px;
+}
+
+#state {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background: #eee;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 45px;
+}
+
+textarea {
+  height: 150px;
+}
+
+p {
+  padding: 15px 0;
+  font-size: 0.8em;
+}
+
+
+
+#button {
+  background-color: #00ffc5;
+  color: white;
+  font-size: 1em;
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+
+}
+
+.header {
+  height: 200px;
+  text-align: center;
+  padding-top: 30px;
+
+}
+
+#zip {
+  width: 50%;
+
+}
+
+input:focus, select:focus, textarea:focus, button:focus{
+    outline: none;
+    border-color: #333;
+}
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+
+.text {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.form {
+  border-top: 2.5px solid #333;
+  width: 60%;
+  margin: 5px auto;
+
+}
+
+.name,
+.email,
+.phone,
+.address,
+.city,
+.state {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+}
+
+.name label,
+.email label,
+.phone label,
+.address label,
+.city label,
+.state label {
+  width: 200px;
+  align-items: center;
+}
+
+.zip {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+}
+.zip label {
+  margin-left: 0;
+}
+
+.legend {
+   margin-left: 0;
+}
+
+}
