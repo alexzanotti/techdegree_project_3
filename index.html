@@ -24,11 +24,11 @@
           </div>
           <div class="email">
             <label for="email">Email Address</label>
-            <input type="text" id="email" name="user_email" placeholder="Required">
+            <input type="email" id="email" name="user_email" placeholder="Required">
           </div>
           <div class="phone">
             <label for="phone">Phone Number</label>
-            <input type="text" id="phone" name="user_phone">
+            <input type="tel" id="phone" name="user_phone">
           </div>
           <div class="address">
             <label for="address">Street Address</label>
@@ -41,13 +41,15 @@
           <div class="state">
             <label for="state">State</label>
             <select id="state" name="user_state">
-              <option value="" selected>Choose State</option>
+              <option value="" selected hidden disabled>Choose State</option>
               <optgroup label="East">
-              <option value="">Florida</option>
-              <option value="saab">New York</option>
+                <option value="Florida">Florida</option>
+                <option value="New York">New York</option>
+              </optgroup>
               <optgroup label="West">
-              <option value="mercedes">California</option>
-              <option value="audi">Nevada</option>
+                <option value="California">California</option>
+                <option value="Nevada">Nevada</option>
+              </optgroup>
             </select>
           </div>
           <div class="zip">
@@ -69,8 +71,8 @@
           <input type="radio" id="html_2" name="Newsletter">
           <label for="html_2">HTML</label><br>
           <input type="radio" id="plain_text" name="Newsletter">
-          <label for="plain_text">Plain Text</label>
-          <p>Other topics you'd like to hear about</p>
+          <label for="plain_text">Plain Text</label><br>
+          <label for="other_topics">Other topics you'd like to hear about</label>
           <textarea id="other_topics" name="other_topics"></textarea>
           <button type="submit" id="button">Sign Up</button>
         </fieldset>
